@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BottomBarItem"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingTop="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="5dp"
+    android:translationY="5dp"
+    tools:ignore="UseCompoundDrawables"
+    tools:layout_width="match_parent">
+
+    <!-- Not using compound drawable because we want a fixed size icon
+    with proper scaling. With drawable scaling has to be done manually -->
+
+    <ImageView
+        android:id="@+id/tab_icon"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/bottom_bar_default_icon" />
+
+    <TextView
+        android:id="@+id/tab_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:textSize="12sp"
+        tools:text="Item title" />
+
+</LinearLayout>

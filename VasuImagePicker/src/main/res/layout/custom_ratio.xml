@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:backgroundTint="@color/colorTransparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ClTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_bg_dailog_1"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    <TextView
+        android:id="@+id/TVCustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custom Crop Ratio"
+        android:textSize="@dimen/_22sdp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/avenir_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_15sdp"/>
+    <TextView
+        android:id="@+id/Tvcustomratio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custom Ratio"
+        android:textSize="@dimen/_18sdp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/avenir_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TVCustom"
+        android:layout_marginTop="@dimen/_5sdp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ClRatio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tvcustomratio">
+
+        <EditText
+            android:id="@+id/etX"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="XXXX"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/white"
+            android:inputType="number"
+            android:maxLength="4"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/avenir_regular"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColorHint="@color/white" />
+        <TextView
+            android:id="@+id/TVHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=":"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/etX"
+            app:layout_constraintEnd_toStartOf="@+id/etY"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="@dimen/_8sdp" />
+
+        <EditText
+            android:id="@+id/etY"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="YYYY"
+            android:backgroundTint="@color/white"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/white"
+            android:inputType="number"
+            android:maxLength="4"
+            android:fontFamily="@font/avenir_regular"
+            android:textColorHint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.18"
+            app:layout_constraintWidth_percent="0.3"
+            app:layout_constraintTop_toBottomOf="@+id/ClRatio"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="@dimen/_15sdp"
+            android:backgroundTint="#b6b6b6"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/avenir_regular"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnSet"
+            android:text="Cancel"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/btnSet"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.18"
+            app:layout_constraintWidth_percent="0.3"
+            app:layout_constraintTop_toBottomOf="@+id/ClRatio"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="@dimen/_15sdp"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/white"
+            android:fontFamily="@font/avenir_regular"
+            app:layout_constraintStart_toEndOf="@+id/btnCancel"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="Set"
+            android:textSize="@dimen/_12sdp"
+            android:textAllCaps="false"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

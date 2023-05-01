@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">GalleryApp</string>
+    <string name="ted_image_picker_album_all">All</string>
+    <string name="ted_image_picker_empty">Empty</string>
+    <string name="ted_image_picker_title">Select Image</string>
+    <string name="ted_image_picker_done">Done</string>
+    <string name="ted_image_picker_max_count">You can not add more</string>
+    <string name="ted_image_picker_min_count">You have to choice images</string>
+
+    <string name="imagepicker_action_ok">OK</string>
+    <string name="imagepicker_action_done">DONE</string>
+
+    <string name="imagepicker_title_folder">Gallery</string>
+    <string name="imagepicker_title_image">Galleries</string>
+
+    <string name="imagepicker_text_gif">GIF</string>
+
+    <string name="imagepicker_error_no_camera">No camera found</string>
+    <string name="imagepicker_error_images_not_exist">Images not exist</string>
+    <string name="imagepicker_error_unknown">Unknown error</string>
+
+    <string name="imagepicker_msg_no_images">No images</string>
+    <string name="imagepicker_msg_no_write_external_storage_permission">To continue, please give access to your photos</string>
+    <string name="imagepicker_msg_limit_images">Limit selection to %d images</string>
+    <string name="toast_unexpected_error">Something Went Wrong.</string>
+
+    <string name="heart">
+    M25.119,2.564c12.434,0.023,18.68,5.892,24.88,17.612  c6.2-11.721,12.446-17.589,24.877-17.612c13.81-0.025,25.035,10.575,25.061,23.66c0.033,23.708-24.952,47.46-49.938,71.212  C25.016,73.685,0.03,49.932,0.064,26.224C0.085,13.14,11.309,2.539,25.119,2.564z
+  </string>
+
+    <string name="circle">
+    "M12,2C6.47,2 2,6.47 2,12s4.47,10 10,10 10,-4.47 10,-10S17.53,2 12,2z"
+      </string>
+
+    <string name="hexagone">
+    "M17.2,3l-10.4,0l-5.2,9l5.2,9l10.4,0l5.2,-9z"
+    </string>
+
+
+    <string name="hive">
+    "M13.79,8l1.8,-3l-1.8,-3l-3.58,0l-1.8,3l1.8,3z"
+    "M10.21,9l-1.8,3l1.8,3l3.58,0l1.8,-3l-1.8,-3z"
+    "M16.45,11.51l3.59,0l1.79,-3l-1.79,-3l-3.59,0l-1.8,3z"
+    "M20.04,12.51l-3.59,0l-1.8,3l1.8,3l3.59,0l1.79,-3z"
+    "M7.55,11.51l1.8,-3l-1.8,-3l-3.59,0l-1.79,3l1.79,3z"
+    "M7.55,12.51l-3.59,0l-1.79,3l1.79,3l3.59,0l1.8,-3z"
+    "M10.21,16l-1.8,3l1.8,3l3.58,0l1.8,-3l-1.8,-3z"
+    </string>
+
+
+    <string name="star">
+    "M12,17.27L18.18,21l-1.64,-7.03L22,9.24l-7.19,-0.61L12,2 9.19,8.63 2,9.24l5.46,4.73L5.82,21z"
+    </string>
+    <string name="cloud">
+     M19.36,10.04C18.67,6.59 15.64,4 12,4 9.11,4 6.6,5.64 5.35,8.04 2.34,8.36 0,10.91 0,14c0,3.31 2.69,6 6,6h13c2.76,0 5,-2.24 5,-5 0,-2.64 -2.05,-4.78 -4.64,-4.96z"
+    </string>
+
+    <string name="pick_image_intent_chooser_title">Select source</string>
+</resources>
